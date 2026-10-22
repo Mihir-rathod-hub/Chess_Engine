@@ -12,10 +12,13 @@
   "dependencies": {
     "@clerk/clerk-react": "^5.61.9",
     "@supabase/supabase-js": "^2.116.0",
+    "chess.js": "^1.4.0",
     "framer-motion": "^13.2.0",
     "lucide-react": "^1.45.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",

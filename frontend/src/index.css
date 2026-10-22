@@ -1,11 +1,11 @@
 :root {
   --bg-dark: #000000;
-  --bg-card: #0A0A0C;
+  --bg-card: #080808;
   --text-primary: #FFFFFF;
   --text-muted: #8E8E93;
   --text-secondary: #D1D1D6;
-  --border-subtle: rgba(255, 255, 255, 0.12);
-  --border-active: rgba(255, 255, 255, 0.35);
+  --border-subtle: #171717;
+  --border-active: rgba(255, 255, 255, 0.25);
   
   --font-title: 'Anton', 'Bebas Neue', 'Oswald', sans-serif;
   --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -238,7 +238,7 @@ input:-webkit-autofill:active {
     display: block;
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 65%, rgba(255, 255, 255, 0.25) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.4) 100%);
     z-index: 2;
     pointer-events: none;
   }
@@ -250,7 +250,7 @@ input:-webkit-autofill:active {
   }
   
   .welcome-mobile-overlay {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 60%, rgba(255, 255, 255, 0.35) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.88) 60%, rgba(0, 0, 0, 0.45) 100%);
   }
 }
 
@@ -482,31 +482,29 @@ input:-webkit-autofill:active {
   width: 100% !important;
   height: 115px !important;
   padding: 0 !important;
-  border: 1.5px solid rgba(0, 0, 0, 0.14) !important;
+  border: 1px solid #1A1A1D !important;
   border-radius: 14px !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  color: #000000 !important;
+  background: #080808 !important;
+  color: #FFFFFF !important;
   overflow: hidden !important;
   cursor: pointer;
   box-sizing: border-box !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4) !important;
 }
 
 .experience-card:hover:not(.selected) {
-  border-color: rgba(0, 0, 0, 0.45) !important;
-  background-color: #FFFFFF !important;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: #101014 !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6) !important;
 }
 
 .experience-card.selected {
-  background-color: #0B0B0E !important;
+  background-color: #141418 !important;
   color: #FFFFFF !important;
-  border: 1.5px solid #000000 !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
   border-radius: 14px !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Left Chess Piece Box Container */
@@ -1092,4 +1090,28 @@ input:-webkit-autofill:active {
     line-height: 0.92;
   }
 }
+
+/* Dashboard Responsive Layout Utilities */
+.dash-desktop-flex {
+  display: flex !important;
+}
+.dash-desktop-grid {
+  display: grid !important;
+}
+.dash-mobile-flex {
+  display: none !important;
+}
+
+@media (max-width: 868px) {
+  .dash-desktop-flex {
+    display: none !important;
+  }
+  .dash-desktop-grid {
+    display: none !important;
+  }
+  .dash-mobile-flex {
+    display: flex !important;
+  }
+}
+
 

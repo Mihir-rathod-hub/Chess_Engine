@@ -70,18 +70,6 @@ export default function SignUpScreen({ onBack, onSignIn, onSubmitSignUp, selecte
       }
 
       if (data?.user) {
-        // Fallback profile insert in case trigger hasn't run or is not configured yet
-        try {
-          await supabase.from('profiles').upsert({
-            id: data.user.id,
-            full_name: fullName.trim(),
-            skill_level: skillLevelValue,
-            rating: 1200,
-          }, { onConflict: 'id' });
-        } catch (profileErr) {
-          console.warn('Profile upsert notice:', profileErr);
-        }
-
         if (onSubmitSignUp) {
           onSubmitSignUp({ user: data.user, session: data.session });
         }

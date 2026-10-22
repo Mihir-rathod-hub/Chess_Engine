@@ -1,0 +1,887 @@
+[
+  {
+    "id": "chess-fundamentals-capablanca",
+    "title": "Chess Fundamentals",
+    "author": "José Raúl Capablanca",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Endgames",
+      "Strategy"
+    ],
+    "summary": "Written by the third World Chess Champion, Chess Fundamentals is widely regarded as one of the most lucid and instructive instructional works in chess literature. Capablanca divides the manual into two structured sections: general theoretical principles followed by thoroughly analyzed illustrative games from his own career. The first part systematically covers fundamental endgames—including king and pawn endings, queen versus pawn, and rook and pawn configurations—before advancing to opening development, center control, and coordinated tactical combinations. Capablanca emphasizes clarity and economy of thought, demonstrating that sound positional foundations and endgame mastery are essential prerequisites for long-term chess improvement.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/33870",
+    "url": "https://www.gutenberg.org/ebooks/33870",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1921,
+    "availabilityNote": "Public domain text. Free to read online or download in multiple formats."
+  },
+  {
+    "id": "chess-strategy-edward-lasker",
+    "title": "Chess Strategy",
+    "author": "Edward Lasker",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Fundamentals"
+    ],
+    "summary": "Edward Lasker's Chess Strategy is a rigorous, principle-oriented guide crafted to lead players beyond mere rote memorization of variations. The treatise concentrates on the guiding laws of pawn skeletons, file opening, minor-piece mobility, and weaknesses in pawn structure. Lasker guides the student through the logical connection between opening deployment, central dominance, and the formulation of coherent middlegame plans directed toward the enemy king or queenside weaknesses. Through dozens of fully annotated master games, the book reveals how strategic concepts dictate tactical opportunities, making it an invaluable bridge for intermediate players seeking deeper positional comprehension.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/5614",
+    "url": "https://www.gutenberg.org/ebooks/5614",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1915,
+    "availabilityNote": "Public domain text. Free to read online or download in plain text and HTML."
+  },
+  {
+    "id": "laskers-manual-of-chess",
+    "title": "Lasker's Manual of Chess",
+    "author": "Emanuel Lasker",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Chess History"
+    ],
+    "summary": "Penned by Emanuel Lasker during his historic 27-year tenure as World Chess Champion, Lasker's Manual of Chess is a monumental, deeply philosophical exposition of chess struggle. The work is organized into distinct 'Books' examining the elements of chess geometry, opening theory, combination theory, and positional play pioneered by Wilhelm Steinitz. Lasker views chess not merely as a mechanical puzzle, but as a psychological clash where harmony, economy of force, and purposeful defense overcome premature aggression. Advanced players will discover profound reflections on risk, compensation, and endgame precision backed by master-level annotations.",
+    "readingUrl": "https://archive.org/details/laskersmanualofchess",
+    "url": "https://archive.org/details/laskersmanualofchess",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1925,
+    "availabilityNote": "Open digital library edition. Free online reading and borrowable digital copy."
+  },
+  {
+    "id": "common-sense-in-chess",
+    "title": "Common Sense in Chess",
+    "author": "Emanuel Lasker",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Openings",
+      "Tactics"
+    ],
+    "summary": "Based on a celebrated series of twelve lectures delivered to London chess enthusiasts in the spring of 1895, Common Sense in Chess distills complex master-level theory into practical, memorable rules of thumb. Emanuel Lasker outlines clear guidelines for piece development, advising students to avoid moving the same piece twice in the opening, control the center with central pawns, and maintain king safety before launching attacks. The lectures progressively tackle kingside sacrifices, open files, and the conversion of material advantages, providing beginners with an intuitive, disciplined foundation for competitive play.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/683",
+    "url": "https://www.gutenberg.org/ebooks/683",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1896,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  },
+  {
+    "id": "my-system-aron-nimzowitsch",
+    "title": "My System",
+    "author": "Aron Nimzowitsch",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "Aron Nimzowitsch's revolutionary 1925 work redefined modern positional strategy by introducing hypermodern chess theory to the world. Divided into two foundational parts—'The Elements' and 'Positional Play'—the book systematically presents core concepts that remain central to modern grandmaster play: the open file, the 7th and 8th ranks, the passed pawn, piece exchange, the pin, discovered checks, overprotection, and the blockade of enemy pawn majorities. Nimzowitsch's idiosyncratic and memorable writing style demystifies positional maneuvering, making this an essential cornerstone for developing players.",
+    "readingUrl": "https://archive.org/details/mysystem0000nimz",
+    "url": "https://archive.org/details/mysystem0000nimz",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1925,
+    "availabilityNote": "Open digital library edition. Free online reading and borrowable digital copy."
+  },
+  {
+    "id": "logical-chess-move-by-move",
+    "title": "Logical Chess: Move by Move",
+    "author": "Irving Chernev",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Strategy",
+      "Annotated Games"
+    ],
+    "summary": "Logical Chess: Move by Move is acclaimed as one of the most effective instructional books ever written for novice and club players. Irving Chernev analyzes thirty classic master games, explaining the strategic rationale behind every single move made by both White and Black from move one until resignation or checkmate. The book is organized into three progressive sections covering kingside attacks, queenside pawn majorities, and positional masterclasses. Readers learn how basic opening principles logically dictate middlegame plans, why aimless moves are penalized, and how grandmasters convert small positional advantages into decisive attacks.",
+    "readingUrl": "https://archive.org/details/logicalchessmove0000cher",
+    "url": "https://archive.org/details/logicalchessmove0000cher",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1957,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "most-instructive-games-of-chess",
+    "title": "The Most Instructive Games of Chess Ever Played",
+    "author": "Irving Chernev",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Annotated Games",
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "In this celebrated anthology, Irving Chernev curates sixty-two brilliant games selected specifically for their instructive clarity rather than mere competitive fame. Each game is chosen to demonstrate a fundamental strategic theme, including the isolated queen's pawn, the bishop pair, centralization, knights outposts, and rook infiltrations on the seventh rank. Chernev's lively, encouraging prose breaks down complex master calculations into accessible principles. Intermediate players will develop sharper pattern recognition and a richer understanding of how classical champions like Capablanca, Alekhine, and Rubinstein constructed winning plans from seemingly quiet positions.",
+    "readingUrl": "https://archive.org/details/mostinstructiveg0000cher",
+    "url": "https://archive.org/details/mostinstructiveg0000cher",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1965,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "art-of-attack-in-chess",
+    "title": "The Art of Attack in Chess",
+    "author": "Vladimir Vuković",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Tactics",
+      "Attacking Play",
+      "Calculation"
+    ],
+    "summary": "Vladimir Vuković's The Art of Attack in Chess is the definitive textbook on constructing and executing direct assaults against the enemy king. Vuković provides a rigorous taxonomy of attacking configurations, analyzing attacks against the uncastled king, the castled position, classic focal points such as h7 and g7, and double-bishop sacrifices. The work explains the prerequisites for an assault, emphasizing piece coordination, center control, and opening lines of attack. Intermediate and advanced players will learn concrete visualization techniques and calculation discipline necessary to transform tactical intuition into lethal checkmating operations.",
+    "readingUrl": "https://archive.org/details/artofattackinche0000vuko",
+    "url": "https://archive.org/details/artofattackinche0000vuko",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1965,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "1001-winning-chess-sacrifices-combinations",
+    "title": "1001 Winning Chess Sacrifices and Combinations",
+    "author": "Fred Reinfeld",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Tactics",
+      "Combinations",
+      "Checkmate Patterns"
+    ],
+    "summary": "Fred Reinfeld's classic exercise compendium remains one of the most widely used tactical puzzle training manuals in chess literature. Containing 1,001 diagrammed positions from authentic master games, the collection is systematically organized by recurring tactical themes: knight forks, pins, skewers, discovered attacks, double checks, clearance sacrifices, deflections, and back-rank mating patterns. Reinfeld emphasizes pattern recognition through sheer repetition, helping developing players instinctively identify tactical opportunities under game conditions. Working through these progressive puzzles sharpens calculation stamina, eliminates common tactical oversights, and provides club competitors with the tactical firepower necessary to convert promising middlegames into decisive victories.",
+    "readingUrl": "https://archive.org/details/1001winningchess0000rein",
+    "url": "https://archive.org/details/1001winningchess0000rein",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1955,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "silmans-complete-endgame-course",
+    "title": "Silman's Complete Endgame Course",
+    "author": "Jeremy Silman",
+    "difficulty": "All Levels",
+    "level": "All Levels",
+    "categories": [
+      "Endgames",
+      "Fundamentals"
+    ],
+    "summary": "Jeremy Silman's groundbreaking endgame manual is uniquely structured by player rating bands, guiding students from complete beginner (under 1000) all the way to master level (2400+). Instead of overwhelming readers with obscure theoretical endings, Silman teaches only the practical concepts necessary for each rating plateau: basic king and pawn endings, opposition, key squares, Lucena and Philidor rook positions, and bishop vs knight dynamics. Clear explanations, test positions, and humorous guidance ensure that players master the exact endgame technique required to win points at their current competitive level.",
+    "readingUrl": "https://archive.org/details/silmanscompletee0000silm",
+    "url": "https://archive.org/details/silmanscompletee0000silm",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 2007,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "how-to-reassess-your-chess",
+    "title": "How to Reassess Your Chess",
+    "author": "Jeremy Silman",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "How to Reassess Your Chess is widely regarded as Jeremy Silman's magnum opus, providing intermediate players with an intuitive framework for positional mastery. Silman introduces his famous concept of 'Imbalances'—comparing minor pieces, pawn structures, space, material, control of key files, and king safety—to systematically formulate plans rather than guessing moves. Through in-depth game analyses, diagrams, and diagnostic quizzes, the book cures common amateur shortcomings such as passive play, pawn weakness neglect, and superficial tactical hunting, equipping students with structured grandmaster thinking.",
+    "readingUrl": "https://archive.org/details/howtoreassessyou0000silm",
+    "url": "https://archive.org/details/howtoreassessyou0000silm",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1993,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "play-winning-chess",
+    "title": "Play Winning Chess",
+    "author": "Yasser Seirawan & Jeremy Silman",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Rules & Principles"
+    ],
+    "summary": "Co-authored by Grandmaster Yasser Seirawan and International Master Jeremy Silman, Play Winning Chess introduces beginners to the four fundamental pillars of chess strategy: Force (material superiority), Time (rapid development), Space (board territory), and Pawn Structure (skeleton of the position). Seirawan's engaging, narrative-driven style demystifies board geometry and piece values, teaching newcomers how to coordinate their forces into harmonious attacking units. The book features instructive historical examples, practice tests, and practical advice on board etiquette and thinking routines, making it an ideal foundational primer for any aspiring chess player.",
+    "readingUrl": "https://archive.org/details/playwinningchess0000seir",
+    "url": "https://archive.org/details/playwinningchess0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1990,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "winning-chess-tactics",
+    "title": "Winning Chess Tactics",
+    "author": "Yasser Seirawan",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Tactics",
+      "Combinations"
+    ],
+    "summary": "Winning Chess Tactics provides an engaging, highly accessible curriculum for calculating combinations and seizing decisive tactical advantages. Yasser Seirawan breaks down essential tactical weapons into clear, memorable chapters: double attacks, pins, forks, skewers, discovered checks, deflections, and decoys. Illustrated with exciting historical games from legendary masters like Paul Morphy and Garry Kasparov, the book demonstrates how tactical opportunities arise naturally from energetic, purposeful play. Progressive end-of-chapter exercises test students' ability to spot hidden tactical strikes under real tournament pressure, bridging the gap between basic rules and sharp competitive calculation.",
+    "readingUrl": "https://archive.org/details/winningchesstact0000seir",
+    "url": "https://archive.org/details/winningchesstact0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1992,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "winning-chess-strategies",
+    "title": "Winning Chess Strategies",
+    "author": "Yasser Seirawan",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "In Winning Chess Strategies, Grandmaster Yasser Seirawan teaches developing players how to formulate coherent middlegame plans rather than reacting passively to opponent moves. The book demystifies positional play by focusing on crucial strategic concepts: outposts for knights, good versus bad bishops, opening and controlling files for rooks, pawn majorities, and creating fatal weaknesses in the opponent's camp. Through deep, conversational annotations of games from Steinitz, Capablanca, and Karpov, Seirawan provides intermediate students with the tools to dominate both open and closed positions.",
+    "readingUrl": "https://archive.org/details/winningchessstra0000seir",
+    "url": "https://archive.org/details/winningchessstra0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1994,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "winning-chess-openings",
+    "title": "Winning Chess Openings",
+    "author": "Yasser Seirawan",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Openings",
+      "Fundamentals"
+    ],
+    "summary": "Winning Chess Openings strips away the intimidating burden of memorizing endless opening variations by grounding players in fundamental opening principles: rapid piece development, central space control, early king safety through castling, and harmony between pieces. Seirawan surveys the major classical and modern opening systems—including the Ruy Lopez, Sicilian Defense, French Defense, Queen's Gambit, and King's Indian Defense—explaining the historical origins, strategic themes, and common middlegame plans arising from each setup. Readers learn how to evaluate opening choices based on their personal playing style and establish confident positions right out of the opening gate.",
+    "readingUrl": "https://archive.org/details/winningchessopen0000seir",
+    "url": "https://archive.org/details/winningchessopen0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1999,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "winning-chess-endings",
+    "title": "Winning Chess Endings",
+    "author": "Yasser Seirawan",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Endgames",
+      "Strategy"
+    ],
+    "summary": "Winning Chess Endings transforms the often-intimidating endgame phase into an engaging, intuitive study of precision and piece coordination. Yasser Seirawan guides intermediate players through king and pawn fundamentals, opposition, triangulation, passed pawn mechanics, and crucial rook ending principles like the Lucena and Philidor positions. The volume highlights how endgame technique is directly connected to opening and middlegame decisions, demonstrating how masters simplify into winning endgame conversions. Clear diagrammed exercises and instructional game fragments solidify theoretical knowledge into dependable practical skill, ensuring players can confidently close out winning positions.",
+    "readingUrl": "https://archive.org/details/winningchessendi0000seir",
+    "url": "https://archive.org/details/winningchessendi0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1999,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "winning-chess-brilliancies",
+    "title": "Winning Chess Brilliancies",
+    "author": "Yasser Seirawan",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Annotated Games",
+      "Tactics",
+      "Chess History"
+    ],
+    "summary": "Winning Chess Brilliancies celebrates twelve of the greatest modern masterpieces played between 1970 and 1990, annotated in rich, accessible detail by Grandmaster Yasser Seirawan. Featuring dramatic clashes by Garry Kasparov, Anatoly Karpov, Viktor Korchnoi, and Boris Spassky, the book examines the creative brilliance, deep strategic foresight, and psychological tension that define elite tournament chess. Readers gain profound insights into how grandmasters assess dynamic complications, sacrifice material for initiative, and navigate mutual time pressure. Each game serves as a complete lesson in opening preparation, middlegame planning, tactical calculation, and clinical endgame conversion.",
+    "readingUrl": "https://archive.org/details/winningchessbril0000seir",
+    "url": "https://archive.org/details/winningchessbril0000seir",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1995,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "think-like-a-grandmaster",
+    "title": "Think Like a Grandmaster",
+    "author": "Alexander Kotov",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Calculation",
+      "Visualization",
+      "Advanced Study"
+    ],
+    "summary": "Alexander Kotov's Think Like a Grandmaster is a legendary Soviet training manual that revolutionized how tournament players approach calculation and tactical visualization. Kotov introduces his famous 'tree of analysis' method, instructing players to identify candidate moves systematically, calculate each variation exactly once without second-guessing, and visualize complex multi-move branch points clearly. The work also explores positional evaluation, psychological composure, time management, and Soviet training regimens, providing ambitious competitors with an objective, disciplined thought process that cures chronic calculation errors and builds confidence in chaotic tactical skirmishes.",
+    "readingUrl": "https://archive.org/details/thinklikegrandma0000koto",
+    "url": "https://archive.org/details/thinklikegrandma0000koto",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1971,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "simple-chess",
+    "title": "Simple Chess",
+    "author": "Michael Stean",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "Michael Stean's Simple Chess is widely praised as one of the most elegant and digestible expositions of positional strategy in chess literature. Stean demystifies high-level chess by demonstrating that grandmaster strategy rests on simple, logical concepts: outposts, weak squares, pawn chains, open files, and the half-open file. Using 30 lucidly annotated master games from Capablanca, Fischer, and Karpov, the book reveals how identifying a single key square can dictate an entire game's outcome. It serves as an essential manual for players advancing beyond basic tactics.",
+    "readingUrl": "https://archive.org/details/simplechess0000stea",
+    "url": "https://archive.org/details/simplechess0000stea",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1978,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "the-game-of-chess-tarrasch",
+    "title": "The Game of Chess",
+    "author": "Siegbert Tarrasch",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Fundamentals",
+      "Strategy",
+      "Endgames"
+    ],
+    "summary": "Dr. Siegbert Tarrasch's The Game of Chess is one of the most comprehensive single-volume instructional treatises in the history of the royal game. Designed to take a complete beginner to master level, the work uniquely begins with the endgame—instilling pure piece mechanics—before progressing through middlegame tactical combinations, positional theory, and opening principles. Tarrasch's dogmatic yet clear principles on space, mobility, and piece centralization provide readers with a disciplined, structured foundation for analytical thinking. Complete illustrative games and exercises reinforce every concept, making it an enduring classic of systematic chess instruction.",
+    "readingUrl": "https://archive.org/details/gameofchess0000tarr",
+    "url": "https://archive.org/details/gameofchess0000tarr",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1935,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "secrets-of-modern-chess-strategy",
+    "title": "Secrets of Modern Chess Strategy",
+    "author": "John Watson",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Advanced Study"
+    ],
+    "summary": "John Watson's award-winning Secrets of Modern Chess Strategy investigates how grandmaster understanding has evolved since the classical era of Aron Nimzowitsch's My System. Watson examines how modern masters treat classical dogmas with flexibility—embracing doubled pawns, temporary king displacement, piece sacrifices for long-term initiative, and dynamic pawn compensation. Advanced competitors will find profound analytical insights into hypermodern prophylaxis, queenless middlegames, and modern piece coordination that reflect contemporary grandmaster practice. Watson's thorough analysis equips serious players to appreciate modern dynamic imbalances and make sophisticated strategic decisions in complex competitive battles.",
+    "readingUrl": "https://archive.org/details/secretsofmodernc0000wats",
+    "url": "https://archive.org/details/secretsofmodernc0000wats",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1998,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "my-best-games-of-chess-alekhine",
+    "title": "My Best Games of Chess 1908–1923",
+    "author": "Alexander Alekhine",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Annotated Games",
+      "Attacking Play",
+      "Chess History"
+    ],
+    "summary": "Written by the fourth World Chess Champion, My Best Games of Chess 1908–1923 presents one hundred of Alexander Alekhine's most electrifying games, annotated with unparalleled analytical depth. Alekhine demonstrates his legendary dynamic attacking style, dazzling sacrificial combinations, and profound tactical imagination against titans like Capablanca, Lasker, Rubinstein, and Marshall. His candid reflections on psychological tension, candidate move calculation, and tournament strategy make this work an enduring fountain of inspiration for ambitious students. Players studying this volume absorb master-level lessons on piece coordination, king-hunt execution, and maintaining unrelenting tactical pressure.",
+    "readingUrl": "https://archive.org/details/mybestgamesofche0000alek",
+    "url": "https://archive.org/details/mybestgamesofche0000alek",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1927,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "modern-chess-strategy-edward-lasker",
+    "title": "Modern Chess Strategy",
+    "author": "Edward Lasker",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "Edward Lasker's Modern Chess Strategy is a thoroughly revised, modernized expansion of his earlier classic treatise. It covers piece coordination, central space control, the dynamics of closed versus open positions, and pawn structure weaknesses in light of hypermodern discoveries. Lasker provides extensive analytical commentary on master games from Botvinnik, Reshevsky, and Fine, detailing how opening configurations transition seamlessly into middlegame strategy and decisive endgame advantages. The book serves as a lucid bridge between classical principles and modern positional techniques, helping intermediate players build coherent strategic plans.",
+    "readingUrl": "https://archive.org/details/modernchessstrat0000lask",
+    "url": "https://archive.org/details/modernchessstrat0000lask",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1945,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "chess-praxis-nimzowitsch",
+    "title": "Chess Praxis",
+    "author": "Aron Nimzowitsch",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Annotated Games"
+    ],
+    "summary": "Chess Praxis serves as the essential companion and practical demonstration of the theories introduced in Aron Nimzowitsch's My System. Through 109 masterfully annotated games from his own tournament career, Nimzowitsch illustrates his core concepts in action: centralization, overprotection, the blockade, pawn chains, and prophylaxis against opponent counterplay. Advanced students will appreciate Nimzowitsch's humorous and insightful commentary, illustrating how hypermodern concepts triumph over rigid classical dogma. Studying these annotated games deepens the reader's appreciation of positional restraint, piece coordination, and long-term strategic pressure.",
+    "readingUrl": "https://archive.org/details/chesspraxis0000nimz",
+    "url": "https://archive.org/details/chesspraxis0000nimz",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1929,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "chess-for-tigers",
+    "title": "Chess for Tigers",
+    "author": "Simon Webb",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Psychology",
+      "Tournament Play",
+      "Strategy"
+    ],
+    "summary": "Simon Webb's Chess for Tigers is a candid, witty, and profoundly practical guide to winning competitive tournament games. Rather than focusing on abstract aesthetics, Webb addresses the psychological realities of over-the-board competition: time trouble management, handling inferior positions, exploiting opponent psychological weaknesses, playing for a win with black, and navigating complex tactical complications. It is an indispensable guide for club and tournament players seeking to maximize their competitive match scores, offering pragmatic techniques that turn drawish or difficult struggles into hard-fought over-the-board victories.",
+    "readingUrl": "https://archive.org/details/chessfortigers0000webb",
+    "url": "https://archive.org/details/chessfortigers0000webb",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1978,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "dynamic-chess-strategy-suba",
+    "title": "Dynamic Chess Strategy",
+    "author": "Mihai Suba",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Advanced Study"
+    ],
+    "summary": "Romanian Grandmaster Mihai Suba's Dynamic Chess Strategy is a groundbreaking investigation into the dynamic, non-linear nature of modern competitive chess. Suba challenges static classical dogmas, introducing revolutionary concepts such as the 'potential' of pieces, the value of dynamic tension, and the strategic advantages of maintaining flexible pawn structures. Richly illustrated with high-level master games, this book provides advanced tournament players with a sophisticated roadmap for dynamic counterattacking play, teaching students how to convert latent positional pressure into decisive attacking momentum.",
+    "readingUrl": "https://archive.org/details/dynamicchessstra0000suba",
+    "url": "https://archive.org/details/dynamicchessstra0000suba",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1991,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "my-60-memorable-games-fischer",
+    "title": "My 60 Memorable Games",
+    "author": "Bobby Fischer",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Annotated Games",
+      "Chess History",
+      "Master Games"
+    ],
+    "summary": "Widely regarded as the greatest collection of games ever published, Bobby Fischer's My 60 Memorable Games covers fourteen pivotal tournaments between 1957 and 1967. Fischer provides extraordinarily objective, deep, and unsparing annotations of his games against Spassky, Tal, Petrosian, and Larsen—including three of his own losses. Readers witness Fischer's uncompromising pursuit of truth, razor-sharp tactical calculations, opening innovations in the Sicilian and King's Indian, and sublime endgame technique. It offers an intimate, masterclass look into the mind of one of history's fiercest competitors.",
+    "readingUrl": "https://archive.org/details/my60memorablegam0000fisc",
+    "url": "https://archive.org/details/my60memorablegam0000fisc",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1969,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "new-ideas-in-chess-evans",
+    "title": "New Ideas in Chess",
+    "author": "Larry Evans",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Calculation"
+    ],
+    "summary": "Grandmaster Larry Evans presents a clean, four-dimensional framework for understanding positional chess: Space, Time, Force, and Pawn Structure. Evans analyzes the permanent versus temporary nature of positional advantages, demonstrating how material leads can be neutralized by active piece play and dynamic initiative. Through clear diagrammed examples from international master practice, the work helps intermediate students break free from passive habits and evaluate board states with objective clarity. Readers learn how to evaluate tactical and positional trade-offs accurately in any given middlegame position.",
+    "readingUrl": "https://archive.org/details/newideasinchess0000evan",
+    "url": "https://archive.org/details/newideasinchess0000evan",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1958,
+    "availabilityNote": "Open digital library edition. Borrowable digital copy on Internet Archive."
+  },
+  {
+    "id": "bobby-fischer-teaches-chess",
+    "title": "Bobby Fischer Teaches Chess",
+    "author": "Bobby Fischer, Stuart Margulies & Donn Mosenfelder",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Checkmate Patterns",
+      "Tactics"
+    ],
+    "summary": "Bobby Fischer Teaches Chess is one of the all-time best-selling instructional chess books, pioneering an innovative programmed-learning format. Requiring no prior knowledge of chess notation or physical board setup, the book presents over three hundred carefully sequenced diagrams that guide beginners through back-rank mates, mating nets, piece coordination, and trapping the enemy king. Students actively answer diagnostic questions on each page, cover the answers, and verify their solutions immediately to build dependable tactical reflexes. The course systematically teaches players how to recognize mating candidates, eliminate defensive escape squares, and deliver forced checkmates, making it an extraordinarily accessible and confidence-building entry point for absolute beginners and casual players.",
+    "readingUrl": "https://archive.org/details/bobby-fischer-teaches-chess-by-bobby-fischer",
+    "url": "https://archive.org/details/bobby-fischer-teaches-chess-by-bobby-fischer",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1966,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "dvoretskys-endgame-manual",
+    "title": "Dvoretsky's Endgame Manual",
+    "author": "Mark Dvoretsky",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Endgames",
+      "Advanced Study",
+      "Calculation"
+    ],
+    "summary": "Mark Dvoretsky's Endgame Manual is universally acknowledged as the gold standard of high-level endgame literature for international masters, grandmasters, and serious tournament aspirants. The manual famously separates theoretical essentials—fundamental positions printed in blue text that every competitive player must memorize cold—from complex practical guidance and detailed analytical extensions. Dvoretsky provides exhaustive treatment of king and pawn opposition, rook ending subtleties (Lucena, Philidor, and Vancura configurations), opposite-colored bishop dynamics, and queen-versus-pawn races with uncompromising analytical rigor. Featuring diagnostic test positions from real master play, this monumental work trains readers to calculate with absolute precision when every tempo decides victory or defeat.",
+    "readingUrl": "https://archive.org/details/dvoretskys-endgame-manual",
+    "url": "https://archive.org/details/dvoretskys-endgame-manual",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 2003,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "the-life-and-games-of-mikhail-tal",
+    "title": "The Life and Games of Mikhail Tal",
+    "author": "Mikhail Tal",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Annotated Games",
+      "Attacking Play",
+      "Chess History"
+    ],
+    "summary": "The Life and Games of Mikhail Tal is widely celebrated as the most charming, witty, and exhilarating autobiography in chess history. The 'Magician from Riga' recounts his meteoric rise to become the eighth World Chess Champion in 1960 at age 23, sharing one hundred of his most daring attacking spectacles annotated with infectious enthusiasm, candid self-deprecation, and sharp humor. Tal demystifies his philosophy of psychological pressure, intuitive piece sacrifices, and calculated complications, explaining how he willingly created chaotic board conditions to test his opponents' nervous systems. Advanced players and chess enthusiasts will discover an inspiring testament to imaginative play, tactical courage, and the romantic art of combination.",
+    "readingUrl": "https://archive.org/details/life-and-games-of-mikhail-tal",
+    "url": "https://archive.org/details/life-and-games-of-mikhail-tal",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1976,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "the-complete-book-of-chess-strategy",
+    "title": "The Complete Book of Chess Strategy",
+    "author": "Jeremy Silman",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Fundamentals"
+    ],
+    "summary": "Designed as an encyclopedic alphabetical reference manual, The Complete Book of Chess Strategy covers essential grandmaster positional and tactical concepts from A to Z. Renowned author and International Master Jeremy Silman provides clear definitions, practical advice, and illustrative diagrams for over one hundred key topics: outposts, pawn majorities, isolated queen pawns, the bishop pair, prophylaxis, open files, minority attacks, and king safety. Each entry explains the strategic objective, common mistakes made by club players, and the exact thinking process required to exploit the feature. It serves as an accessible desk companion for intermediate players seeking quick, authoritative explanations of complex strategic themes.",
+    "readingUrl": "https://archive.org/details/thecompletebookofchessstrategy",
+    "url": "https://archive.org/details/thecompletebookofchessstrategy",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1998,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "the-middle-game-in-chess-znosko",
+    "title": "The Middle Game in Chess",
+    "author": "Eugene Znosko-Borovsky",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play",
+      "Fundamentals"
+    ],
+    "summary": "Eugene Znosko-Borovsky's The Middle Game in Chess is a pioneering early-twentieth-century instructional treatise that analyzes the foundational laws governing chess middlegames. The author explores the delicate interplay of material force, space, and time, demonstrating how opening configurations naturally transform into attacking operations or central maneuvering. Through dozens of clear diagrams and master-game extracts, readers learn how to evaluate pawn structures, seize file control, orchestrate piece transfers, and execute plans with purposeful coordination. Znosko-Borovsky's clear, didactic approach emphasizes that every successful middlegame operation relies on an objective evaluation of strengths and weaknesses rather than optimistic speculation, making it an invaluable guide for developing club players.",
+    "readingUrl": "https://archive.org/details/middlegameinches00znos",
+    "url": "https://archive.org/details/middlegameinches00znos",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1922,
+    "availabilityNote": "Open digital library edition. Free online reading and download."
+  },
+  {
+    "id": "a-history-of-chess-murray",
+    "title": "A History of Chess",
+    "author": "H. J. R. Murray",
+    "difficulty": "All Levels",
+    "level": "All Levels",
+    "categories": [
+      "Chess History"
+    ],
+    "summary": "H. J. R. Murray's monumental nine-hundred-page opus, published by Oxford University Press in 1913, remains the definitive historical authority on the origin and global evolution of the royal game. Murray painstakingly traces chess from its earliest ancestor Chaturanga in sixth-century India, through its Persian transformation as Shatranj, across the medieval Islamic world, and into Western Europe where modern piece powers crystallized during the Renaissance. Drawing upon rare medieval Arabic manuscripts, European monastic chronicles, archaeological findings, and early printed treatises, this masterwork explores how chess culture, variants, and social status evolved across civilizations, providing chess lovers and scholars with an unparalleled historical treasury.",
+    "readingUrl": "https://archive.org/details/AHistoryOfChess",
+    "url": "https://archive.org/details/AHistoryOfChess",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1913,
+    "availabilityNote": "Open digital library edition. Free online reading and download."
+  },
+  {
+    "id": "back-to-basics-openings",
+    "title": "Back to Basics: Openings",
+    "author": "Carsten Hansen",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Openings",
+      "Fundamentals"
+    ],
+    "summary": "Back to Basics: Openings by FIDE Master Carsten Hansen provides developing and club players with a clear, reliable roadmap through the bewildering maze of modern opening systems. Hansen emphasizes foundational concepts over rote memorization: fighting for central squares, developing minor pieces rapidly, castling early for king safety, and anticipating opponent counterplay. The volume surveys open, semi-open, and closed games—including the Italian Game, Sicilian Defense, French Defense, and Queen's Gambit—explaining the historical origins, underlying strategic themes, and typical pawn formations arising from each setup. Beginners and intermediate players will gain the confidence to steer games into sound, understandable middlegame positions without falling into tactical opening traps.",
+    "readingUrl": "https://archive.org/details/Back_to_Basics_Openings",
+    "url": "https://archive.org/details/Back_to_Basics_Openings",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 2010,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "improve-your-chess-now-tisdall",
+    "title": "Improve Your Chess Now",
+    "author": "Jonathan Tisdall",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Calculation",
+      "Visualization",
+      "Advanced Study"
+    ],
+    "summary": "Grandmaster Jonathan Tisdall's Improve Your Chess Now offers an insightful, witty, and modern examination of how tournament players calculate variations and make decisions under competitive pressure. Tisdall explores visual blindness in calculation, pattern recognition, Stean's simple chess principles, and the psychology of intuitive decision-making. He breaks down calculation into practical categories—blind spots, candidate move selection, and Soviet-style analytical discipline—while discussing why humans blunder and how grandmasters stay objective in mutual time trouble. Through fascinating practical exercises and deep master analyses, the book equips advanced students with concrete methods to eliminate mental fatigue, sharpen tactical calculation, and refine their intuitive board evaluation.",
+    "readingUrl": "https://archive.org/details/Improve_Your_Chess_Now",
+    "url": "https://archive.org/details/Improve_Your_Chess_Now",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 1997,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "what-it-takes-to-become-a-chess-master",
+    "title": "What It Takes to Become a Chess Master",
+    "author": "Andrew Soltis",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Advanced Study",
+      "Calculation",
+      "Tournament Play"
+    ],
+    "summary": "Grandmaster Andy Soltis investigates the exact technical and psychological differences separating strong club players from true chess masters. Soltis details the nuances of concrete calculation, handling mutual time trouble, understanding subtle pawn lever transitions, and developing endgame intuition. Filled with practical tournament examples, the book demonstrates why general principles often fail in complex modern positions and how masters replace dogmatic rules with concrete calculation. Advanced players will learn how to evaluate asymmetric piece trades, calculate sharp counter-tactics, manage tournament stamina, and develop the analytical resilience required to break through master-level competitive rating barriers.",
+    "readingUrl": "https://archive.org/details/What_It_Takes_To_Become_a_Chess_Master",
+    "url": "https://archive.org/details/What_It_Takes_To_Become_a_Chess_Master",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 2012,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "chess-blueprints-planning-middlegame",
+    "title": "Chess Blueprints: Planning in the Middlegame",
+    "author": "Nikolay Yakovlev",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Strategy",
+      "Positional Play"
+    ],
+    "summary": "Chess Blueprints: Planning in the Middlegame presents club players with structured tactical and strategic templates for planning in dynamic middlegames. Nikolay Yakovlev explains how to identify opponent weaknesses, coordinate heavy pieces along open files, launch pawn storms, and restrict enemy minor pieces. Instructive game examples and diagnostic exercises teach intermediate students how to bridge opening deployment with decisive endgame conversions. By learning to formulate coherent plans based on pawn structure and king position, players avoid aimless shuffling and learn to systematically build irresistible pressure against opponent camps across both open and closed positions.",
+    "readingUrl": "https://archive.org/details/Chess_Blueprints_Planning_in_the_Middlegame",
+    "url": "https://archive.org/details/Chess_Blueprints_Planning_in_the_Middlegame",
+    "coverUrl": null,
+    "sourceName": "Internet Archive",
+    "language": "English",
+    "publicationYear": 2010,
+    "availabilityNote": "Open digital library edition. Free online reading."
+  },
+  {
+    "id": "the-blue-book-of-chess",
+    "title": "The Blue Book of Chess",
+    "author": "Howard Staunton",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Fundamentals",
+      "Rules & Principles",
+      "Openings"
+    ],
+    "summary": "The Blue Book of Chess is an accessible nineteenth-century introductory manual teaching the fundamentals, rules, and elementary combinations of chess. Howard Staunton introduces piece movements, notation, relative values, and basic opening traps like Scholar's Mate. The work includes numerous practical games and illustrative problem diagrams designed to build tactical alertness and sound opening development in novice players. Readers are guided through basic checkmates, pawn promotion rules, the value of piece coordination, and common beginner blunders. It provides historical charm alongside foundational advice that helps novices establish strong tactical habits and understanding of the game's earliest principles.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/34484",
+    "url": "https://www.gutenberg.org/ebooks/34484",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1870,
+    "availabilityNote": "Public domain text. Free to read online or download in multiple formats."
+  },
+  {
+    "id": "the-chess-players-handbook",
+    "title": "The Chess-Player's Handbook",
+    "author": "Howard Staunton",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Fundamentals",
+      "Openings",
+      "Chess History"
+    ],
+    "summary": "Howard Staunton's The Chess-Player's Handbook is one of the foundational nineteenth-century chess textbooks that standardized modern opening terminology and tournament rules. Staunton analyzes classical openings such as the King's Gambit, Giuoco Piano, and Evans Gambit, alongside fundamental endgame principles and historical master games. The work offers students a rich historical perspective on the Romantic era of sacrificial chess, providing exhaustive move trees, tactical commentary, and advice on tournament conduct. Intermediate players will enjoy studying how classical masters navigated open lines, pawn sacrifices, and rapid development in an era when kingside attacking play dominated the international chess landscape.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/47119",
+    "url": "https://www.gutenberg.org/ebooks/47119",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1847,
+    "availabilityNote": "Public domain text. Free to read online or download in multiple formats."
+  },
+  {
+    "id": "the-minor-tactics-of-chess",
+    "title": "The Minor Tactics of Chess",
+    "author": "Franklin K. Young & Edwin C. Howell",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Tactics",
+      "Positional Play",
+      "Fundamentals"
+    ],
+    "summary": "Franklin K. Young and Edwin C. Howell present an original geometrical treatise on chess piece mechanics and tactical deployments. The Minor Tactics of Chess treats the chessboard as a battlefield, classifying piece positions, pawn chains, lines of communication, and minor-piece skirmishes into structured tactical maneuvers. Intermediate students will gain a fresh, highly structured perspective on piece coordination, localized tactical superiorities, and the mathematical symmetry of piece maneuvers. The authors illustrate their military-inspired approach with practical game positions, teaching readers how small tactical advantages accumulate into overwhelming strategic positions that force opponent capitulation.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/28678",
+    "url": "https://www.gutenberg.org/ebooks/28678",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1894,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  },
+  {
+    "id": "the-major-tactics-of-chess",
+    "title": "The Major Tactics of Chess",
+    "author": "Franklin K. Young",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Tactics",
+      "Combinations",
+      "Calculation"
+    ],
+    "summary": "The Major Tactics of Chess advances Franklin K. Young's strategic system by examining complex, multi-piece combinations and decisive breakthrough operations. Young catalogs tactical maneuvers including deflections, king hunts, open-file penetrations, and catastrophic central sacrifices. Through rigorous analytical diagrams, advanced players develop calculation endurance and an appreciation for sweeping geometric combinations that decisively shatter defensive fortresses. The book bridges localized skirmishes with grand campaigns, demonstrating how tactical combinations can be predicted through positional geometry and force concentration, making it an intellectually stimulating study for ambitious chess tacticians.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/30248",
+    "url": "https://www.gutenberg.org/ebooks/30248",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1900,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  },
+  {
+    "id": "the-grand-tactics-of-chess",
+    "title": "The Grand Tactics of Chess",
+    "author": "Franklin K. Young",
+    "difficulty": "Advanced",
+    "level": "Advanced",
+    "categories": [
+      "Tactics",
+      "Strategy",
+      "Advanced Study"
+    ],
+    "summary": "In The Grand Tactics of Chess, Franklin K. Young presents the culminating exposition of his systematic chess philosophy. The treatise integrates minor and major tactical operations into comprehensive grand plans for campaign dominance. Young details the strategic correlation between central domination, wing attacks, and defensive prophylaxis, offering ambitious competitors an exhaustive study of coordinated chess warfare. The work explores how theoretical principles translate into decisive master-game victories, helping advanced students visualize broad strategic arcs and coordinate all thirty-two pieces in pursuit of an inescapable checkmating attack.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/32007",
+    "url": "https://www.gutenberg.org/ebooks/32007",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1898,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  },
+  {
+    "id": "chess-openings-james-mason",
+    "title": "Chess Openings",
+    "author": "James Mason",
+    "difficulty": "Beginner",
+    "level": "Beginner",
+    "categories": [
+      "Openings",
+      "Fundamentals"
+    ],
+    "summary": "James Mason's Chess Openings is a classic introductory survey of classical opening systems designed for developing players. Mason explains the strategic ideas and common traps behind open games (Ruy Lopez, King's Gambit, Italian Game), semi-open games (French, Sicilian), and closed systems (Queen's Gambit). The book emphasizes sound opening principles over brute-force memorization, giving beginners a reliable start to every game. Readers learn why developing knights before bishops is advantageous, how to challenge enemy center pawns, and how to transition safely from opening lines into coherent middlegame plans without incurring structural weaknesses.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/37418",
+    "url": "https://www.gutenberg.org/ebooks/37418",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1897,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  },
+  {
+    "id": "the-principles-of-chess",
+    "title": "The Principles of Chess in Theory and Practice",
+    "author": "James Mason",
+    "difficulty": "Intermediate",
+    "level": "Intermediate",
+    "categories": [
+      "Fundamentals",
+      "Strategy",
+      "Endgames"
+    ],
+    "summary": "James Mason's The Principles of Chess in Theory and Practice is one of the most respected classical instructional manuals of the late nineteenth century. Mason systematically guides the student through elements of chess geometry, basic and complex endgames, positional middlegame strategy, and a comprehensive master-game section. His logical exposition of piece coordination, pawn structure, and tactical foresight provides intermediate players with timeless guidance on planning and conversion. By studying Mason's lucid analysis of master struggles, readers cultivate a refined positional sense and an appreciation for the harmonious connection between opening, middlegame, and endgame technique.",
+    "readingUrl": "https://www.gutenberg.org/ebooks/45037",
+    "url": "https://www.gutenberg.org/ebooks/45037",
+    "coverUrl": null,
+    "sourceName": "Project Gutenberg",
+    "language": "English",
+    "publicationYear": 1894,
+    "availabilityNote": "Public domain text. Free to read online or download."
+  }
+]

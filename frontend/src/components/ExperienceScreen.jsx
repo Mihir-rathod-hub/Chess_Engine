@@ -79,8 +79,8 @@ export default function ExperienceScreen({ onSelectExperience, onSkip, onBack })
       width: '100vw',
       minHeight: '100vh',
       minHeight: '100dvh',
-      backgroundColor: '#FFFFFF',
-      color: '#000000',
+      backgroundColor: '#000000',
+      color: '#FFFFFF',
       display: 'flex',
       flexDirection: 'column',
       position: 'relative',
@@ -91,6 +91,7 @@ export default function ExperienceScreen({ onSelectExperience, onSkip, onBack })
         src="/Experience_Page_BG_Image.jpg"
         alt="Experience Page Background"
         className="experience-bg-image"
+        style={{ filter: 'brightness(0.5) contrast(1.1)' }}
       />
 
       {/* Viewport Layout Container */}
@@ -120,20 +121,20 @@ export default function ExperienceScreen({ onSelectExperience, onSkip, onBack })
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="experience-left-col"
           >
-            <h1 className="experience-title">
+            <h1 className="experience-title" style={{ color: '#FFFFFF' }}>
               CHOOSE YOUR<br />
               EXPERIENCE
             </h1>
-            <p className="experience-subtitle">
+            <p className="experience-subtitle" style={{ color: '#A1A1AA' }}>
               Select the experience that<br />
               matches your chess level.
             </p>
 
             {/* Triple Horizontal Line Motif Accent */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', width: '52px', marginTop: '0.35rem' }}>
-              <div style={{ width: '52px', height: '2.5px', backgroundColor: '#000000', borderRadius: '1px' }} />
-              <div style={{ width: '40px', height: '2.5px', backgroundColor: '#000000', borderRadius: '1px' }} />
-              <div style={{ width: '28px', height: '2.5px', backgroundColor: '#000000', borderRadius: '1px' }} />
+              <div style={{ width: '52px', height: '2.5px', backgroundColor: '#FFFFFF', borderRadius: '1px' }} />
+              <div style={{ width: '40px', height: '2.5px', backgroundColor: '#FFFFFF', borderRadius: '1px' }} />
+              <div style={{ width: '28px', height: '2.5px', backgroundColor: '#FFFFFF', borderRadius: '1px' }} />
             </div>
           </motion.div>
 
@@ -198,14 +199,14 @@ export default function ExperienceScreen({ onSelectExperience, onSkip, onBack })
         <footer className="experience-footer">
           {/* 2x2 Checkerboard Icon */}
           <div className="checker-accent">
-            <div className="checker-box" style={{ backgroundColor: '#000000' }} />
-            <div className="checker-box" style={{ backgroundColor: 'rgba(0,0,0,0.2)' }} />
-            <div className="checker-box" style={{ backgroundColor: 'rgba(0,0,0,0.2)' }} />
-            <div className="checker-box" style={{ backgroundColor: '#000000' }} />
+            <div className="checker-box" style={{ backgroundColor: '#FFFFFF' }} />
+            <div className="checker-box" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} />
+            <div className="checker-box" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} />
+            <div className="checker-box" style={{ backgroundColor: '#FFFFFF' }} />
           </div>
 
           {/* Center Decorative Line */}
-          <div style={{ flex: 1, height: '1.5px', backgroundColor: '#000000', opacity: 0.25, margin: '0 2rem' }} />
+          <div style={{ flex: 1, height: '1.5px', backgroundColor: '#FFFFFF', opacity: 0.25, margin: '0 2rem' }} />
 
           {/* Skip Action Button */}
           <motion.button

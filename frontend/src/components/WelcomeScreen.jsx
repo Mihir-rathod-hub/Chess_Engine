@@ -8,8 +8,8 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
       width: '100vw',
       minHeight: '100vh',
       minHeight: '100dvh',
-      backgroundColor: '#FFFFFF',
-      color: '#000000',
+      backgroundColor: '#000000',
+      color: '#FFFFFF',
       display: 'flex',
       flexDirection: 'column',
       position: 'relative',
@@ -20,6 +20,7 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
         src="/Welcome_Page_Background.jpg"
         alt="Welcome Page Full Background"
         className="welcome-bg-image"
+        style={{ filter: 'brightness(0.5) contrast(1.1)' }}
       />
 
       {/* Soft Mobile Backdrop Overlay for 100% Text Legibility */}
@@ -67,7 +68,7 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
           >
             {/* Giant Condensed "WELCOME TO STRATEGIC CHESS" Header */}
             <div>
-              <h1 className="welcome-title">
+              <h1 className="welcome-title" style={{ color: '#FFFFFF' }}>
                 WELCOME TO<br />
                 STRATEGIC<br />
                 CHESS
@@ -77,7 +78,8 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
             {/* Solid Black Badge: PLAY • LEARN • COMPETE */}
             <div style={{
               display: 'inline-block',
-              backgroundColor: '#000000',
+              backgroundColor: '#0A0A0C',
+              border: '1px solid #1A1A1D',
               color: '#FFFFFF',
               padding: '0.55rem 1.25rem',
               width: 'max-content'
@@ -98,7 +100,7 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
               fontFamily: 'var(--font-body)',
               fontSize: 'clamp(0.9rem, 1.5vh, 1.1rem)',
               fontWeight: 500,
-              color: '#1A1A1A',
+              color: '#A1A1AA',
               lineHeight: 1.45,
               maxWidth: '420px'
             }}>
@@ -107,9 +109,9 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
 
             {/* Triple Horizontal Line Motif Accent */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', width: '45px', marginTop: '0.25rem' }}>
-              <div style={{ width: '45px', height: '2px', backgroundColor: '#000000' }} />
-              <div style={{ width: '35px', height: '2px', backgroundColor: '#000000' }} />
-              <div style={{ width: '25px', height: '2px', backgroundColor: '#000000' }} />
+              <div style={{ width: '45px', height: '2px', backgroundColor: '#FFFFFF' }} />
+              <div style={{ width: '35px', height: '2px', backgroundColor: '#FFFFFF' }} />
+              <div style={{ width: '25px', height: '2px', backgroundColor: '#FFFFFF' }} />
             </div>
           </motion.div>
 
@@ -136,7 +138,7 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.85rem',
                 fontWeight: 700,
-                color: '#222222',
+                color: '#A1A1AA',
                 letterSpacing: '0.02em'
               }}>
                 New here?
@@ -170,7 +172,7 @@ export default function WelcomeScreen({ onSignUp, onSignIn, onBack }) {
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.85rem',
                 fontWeight: 700,
-                color: '#222222',
+                color: '#A1A1AA',
                 letterSpacing: '0.02em'
               }}>
                 Already have an account?

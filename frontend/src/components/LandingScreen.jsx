@@ -41,11 +41,11 @@ export default function LandingScreen({ onStartJourney, onSignIn }) {
         }}>
           {/* Brand Logo */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', cursor: 'pointer' }}>
-            <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 0L17.5 7L24.5 3.5L22 13H6L3.5 3.5L10.5 7L14 0Z" fill="white"/>
-              <path d="M5 16H23V19H5V16Z" fill="white"/>
-              <path d="M3 21H25V24H3V21Z" fill="white"/>
-            </svg>
+            <img
+              src="/official_logo.png"
+              alt="Strategic Chess Logo"
+              style={{ width: '32px', height: '32px', borderRadius: '6px', objectFit: 'contain' }}
+            />
             <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
               <span style={{ fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.12em', color: '#FFFFFF' }}>
                 STRATEGIC

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { supabase } from './lib/supabase';
 import LandingScreen from './components/LandingScreen';
 import WelcomeScreen from './components/WelcomeScreen';
@@ -7,10 +8,11 @@ import SignUpScreen from './components/SignUpScreen';
 import SignInScreen from './components/SignInScreen';
 import ForgotPasswordScreen from './components/ForgotPasswordScreen';
 import DashboardScreen from './components/DashboardScreen';
+import ProtectedRoute from './routes/ProtectedRoute';
+import PublicRoute from './routes/PublicRoute';
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState(1);
-  const [previousScreen, setPreviousScreen] = useState(1);
+  const navigate = useNavigate();
   const [userExperience, setUserExperience] = useState(null);
 
   // Supabase Auth State
@@ -19,9 +21,10 @@ export default function App() {
   const [profile, setProfile] = useState(null);
   const [loadingSession, setLoadingSession] = useState(true);
 
-  // Fetch profile row from public.profiles table
-  const fetchProfile = async (userId) => {
-    if (!userId) return;
+  // Fetch profile row from public.profiles table with metadata fallback
+  const fetchProfile = async (currentUser) => {
+    if (!currentUser) return;
+    const userId = currentUser.id;
     try {
       const { data, error } = await supabase
         .from('profiles')
@@ -31,6 +34,17 @@ export default function App() {
       
       if (!error && data) {
         setProfile(data);
+      } else {
+        // If table permissions or network error occurs, fall back to authoritative auth metadata without fabricating ratings
+        const metaRating = typeof currentUser.user_metadata?.rating === 'number'
+          ? currentUser.user_metadata.rating
+          : null;
+        setProfile({
+          id: userId,
+          full_name: currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Player',
+          skill_level: currentUser.user_metadata?.skill_level || 'Intermediate',
+          rating: metaRating
+        });
       }
     } catch (err) {
       console.warn('Could not fetch user profile:', err);
@@ -53,8 +67,7 @@ export default function App() {
       setSession(session);
       setUser(session?.user ?? null);
       if (session?.user) {
-        fetchProfile(session.user.id);
-        setCurrentScreen(7); // Authenticated Dashboard Screen
+        fetchProfile(session.user);
       }
       setLoadingSession(false);
       clearTimeout(safetyTimer);
@@ -73,8 +86,7 @@ export default function App() {
       setUser(session?.user ?? null);
 
       if (session?.user) {
-        await fetchProfile(session.user.id);
-        setCurrentScreen(7); // Directly navigate to Dashboard
+        await fetchProfile(session.user);
       } else {
         setProfile(null);
       }
@@ -89,28 +101,26 @@ export default function App() {
     };
   }, []);
 
-
   const handleStartJourney = () => {
-    setCurrentScreen(2);
+    navigate('/welcome');
   };
 
-  const handleOpenSignIn = (fromScreen = 1) => {
-    setPreviousScreen(fromScreen);
-    setCurrentScreen(5);
+  const handleOpenSignIn = () => {
+    navigate('/signin');
   };
 
   const handleSignUp = () => {
-    setCurrentScreen(3);
+    navigate('/experience');
   };
 
   const handleSelectExperience = (level) => {
     setUserExperience(level);
-    setCurrentScreen(4);
+    navigate('/signup');
   };
 
   const handleSkipExperience = () => {
     setUserExperience('Skip');
-    setCurrentScreen(4);
+    navigate('/signup');
   };
 
   const handleSubmitSignUpSuccess = ({ user, session }) => {
@@ -118,10 +128,10 @@ export default function App() {
       setSession(session);
       setUser(user);
       fetchProfile(user.id);
-      setCurrentScreen(7);
+      navigate('/dashboard');
     } else {
       alert('Account created! Please check your email if confirmation is required, or sign in.');
-      setCurrentScreen(5);
+      navigate('/signin');
     }
   };
 
@@ -131,7 +141,7 @@ export default function App() {
     if (user?.id) {
       fetchProfile(user.id);
     }
-    setCurrentScreen(7);
+    navigate('/dashboard');
   };
 
   const handleLogout = async () => {
@@ -143,105 +153,227 @@ export default function App() {
       setSession(null);
       setUser(null);
       setProfile(null);
-      setCurrentScreen(1); // Return to Landing Screen
+      navigate('/signin');
     }
   };
 
-  // Prevent flash of landing page while initial session check is running
-  if (loadingSession) {
-    return (
-      <div style={{
-        width: '100vw',
-        height: '100vh',
-        backgroundColor: '#000000',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#FFFFFF'
-      }}>
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '1rem'
-        }}>
-          <div style={{
-            width: '36px',
-            height: '36px',
-            border: '3px solid rgba(255,255,255,0.1)',
-            borderTopColor: '#FFFFFF',
-            borderRadius: '50%',
-            animation: 'spin 0.8s linear infinite'
-          }} />
-          <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div style={{ width: '100vw', minHeight: '100vh', minHeight: '100dvh', overflowX: 'hidden' }}>
-      {/* Screen 1: Landing Page */}
-      {currentScreen === 1 && !session && (
-        <LandingScreen 
-          onStartJourney={handleStartJourney}
-          onSignIn={() => handleOpenSignIn(1)}
-        />
-      )}
+      <Routes>
+        {/* Unauthenticated / Public Routes */}
+        <Route element={<PublicRoute session={session} loadingSession={loadingSession} />}>
+          <Route 
+            path="/" 
+            element={
+              <LandingScreen 
+                onStartJourney={handleStartJourney}
+                onSignIn={handleOpenSignIn}
+              />
+            } 
+          />
+          <Route 
+            path="/welcome" 
+            element={
+              <WelcomeScreen 
+                onSignUp={handleSignUp}
+                onSignIn={handleOpenSignIn}
+                onBack={() => navigate('/')}
+              />
+            } 
+          />
+          <Route 
+            path="/experience" 
+            element={
+              <ExperienceScreen 
+                onSelectExperience={handleSelectExperience}
+                onSkip={handleSkipExperience}
+                onBack={() => navigate('/welcome')}
+              />
+            } 
+          />
+          <Route 
+            path="/signup" 
+            element={
+              <SignUpScreen 
+                onBack={() => navigate('/experience')}
+                onSignIn={handleOpenSignIn}
+                onSubmitSignUp={handleSubmitSignUpSuccess}
+                selectedExperience={userExperience}
+              />
+            } 
+          />
+          <Route 
+            path="/signin" 
+            element={
+              <SignInScreen 
+                onBack={() => navigate('/')}
+                onGoToSignUp={() => navigate('/experience')}
+                onForgotPassword={() => navigate('/forgot-password')}
+                onSignInSuccess={handleSignInSuccess}
+              />
+            } 
+          />
+          <Route 
+            path="/forgot-password" 
+            element={
+              <ForgotPasswordScreen 
+                onGoToSignIn={() => navigate('/signin')}
+              />
+            } 
+          />
+        </Route>
 
-      {/* Screen 2: Welcome Page */}
-      {currentScreen === 2 && !session && (
-        <WelcomeScreen 
-          onSignUp={handleSignUp}
-          onSignIn={() => handleOpenSignIn(2)}
-          onBack={() => setCurrentScreen(1)}
-        />
-      )}
+        {/* Authenticated / Protected Dashboard Routes */}
+        <Route element={<ProtectedRoute session={session} loadingSession={loadingSession} />}>
+          <Route 
+            path="/dashboard" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/play" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/play/*" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/puzzles" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/puzzles/*" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/learn" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/learn/*" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/books" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/news" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/leaderboard" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/profile" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/settings" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+          <Route 
+            path="/tournament/*" 
+            element={
+              <DashboardScreen 
+                user={user}
+                profile={profile}
+                onLogout={handleLogout}
+                onRefreshProfile={() => fetchProfile(user)}
+              />
+            } 
+          />
+        </Route>
 
-      {/* Screen 3: Choose Your Experience Page */}
-      {currentScreen === 3 && !session && (
-        <ExperienceScreen 
-          onSelectExperience={handleSelectExperience}
-          onSkip={handleSkipExperience}
-          onBack={() => setCurrentScreen(2)}
-        />
-      )}
-
-      {/* Screen 4: Sign Up Page */}
-      {currentScreen === 4 && !session && (
-        <SignUpScreen 
-          onBack={() => setCurrentScreen(3)}
-          onSignIn={() => handleOpenSignIn(4)}
-          onSubmitSignUp={handleSubmitSignUpSuccess}
-          selectedExperience={userExperience}
-        />
-      )}
-
-      {/* Screen 5: Sign In Page */}
-      {currentScreen === 5 && !session && (
-        <SignInScreen 
-          onBack={() => setCurrentScreen(previousScreen)}
-          onGoToSignUp={() => setCurrentScreen(3)}
-          onForgotPassword={() => setCurrentScreen(6)}
-          onSignInSuccess={handleSignInSuccess}
-        />
-      )}
-
-      {/* Screen 6: Forgot Password Page */}
-      {currentScreen === 6 && !session && (
-        <ForgotPasswordScreen 
-          onGoToSignIn={() => setCurrentScreen(5)}
-        />
-      )}
-
-      {/* Screen 7: Authenticated Dashboard View */}
-      {(currentScreen === 7 || session) && (
-        <DashboardScreen 
-          user={user}
-          profile={profile}
-          onLogout={handleLogout}
-        />
-      )}
+        {/* Fallback redirect */}
+        <Route path="*" element={<Navigate to={session ? "/dashboard" : "/"} replace />} />
+      </Routes>
     </div>
   );
 }
+

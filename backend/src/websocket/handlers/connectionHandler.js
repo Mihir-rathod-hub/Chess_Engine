@@ -192,16 +192,22 @@ export async function handleWebSocketConnection(socket, req, logger) {
 
   // 1. Authenticate immediately if token was provided in URL query string
   if (tokenFromQuery) {
-    try {
-      const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(tokenFromQuery);
-      if (authError || !user) {
-        return rejectAuth('Invalid or expired authentication token.');
-      }
+    if (!supabaseAdmin || tokenFromQuery.startsWith('guest_')) {
+      const guestUser = { id: tokenFromQuery, email: 'guest@strategic-chess.local' };
+      const guestProfile = { id: tokenFromQuery, full_name: 'Guest Player', rating: 1200, skill_level: 'Intermediate' };
+      completeAuth(guestUser, guestProfile);
+    } else {
+      try {
+        const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(tokenFromQuery);
+        if (authError || !user) {
+          return rejectAuth('Invalid or expired authentication token.');
+        }
 
-      const profile = await fetchUserProfile(user, tokenFromQuery, logger);
-      completeAuth(user, profile);
-    } catch (err) {
-      return rejectAuth('Authentication processing error.');
+        const profile = await fetchUserProfile(user, tokenFromQuery, logger);
+        completeAuth(user, profile);
+      } catch (err) {
+        return rejectAuth('Authentication processing error.');
+      }
     }
   } else {
     // If no token in query string, give client 500ms to send connection.auth frame, otherwise reject
@@ -220,12 +226,19 @@ export async function handleWebSocketConnection(socket, req, logger) {
         try {
           const parsed = JSON.parse(rawData.toString());
           if (parsed && parsed.type === MessageTypes.AUTH && parsed.payload?.token) {
-            const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(parsed.payload.token);
+            const token = parsed.payload.token;
+            if (!supabaseAdmin || token.startsWith('guest_')) {
+              const guestUser = { id: token, email: 'guest@strategic-chess.local' };
+              const guestProfile = { id: token, full_name: 'Guest Player', rating: 1200, skill_level: 'Intermediate' };
+              return completeAuth(guestUser, guestProfile);
+            }
+
+            const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token);
             if (authError || !user) {
               return rejectAuth('Invalid or expired authentication token.');
             }
 
-            const profile = await fetchUserProfile(user, parsed.payload.token, logger);
+            const profile = await fetchUserProfile(user, token, logger);
             return completeAuth(user, profile);
           }
         } catch (e) {}

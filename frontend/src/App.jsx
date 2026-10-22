@@ -61,12 +61,33 @@ export default function App() {
       }
     }, 600);
 
+    // Check for existing guest session in localStorage first
+    const savedGuest = localStorage.getItem('guest_session');
+    if (savedGuest) {
+      try {
+        const parsed = JSON.parse(savedGuest);
+        if (parsed?.user && parsed?.session) {
+          setSession(parsed.session);
+          setUser(parsed.user);
+          setProfile(parsed.profile || {
+            id: parsed.user.id,
+            full_name: parsed.user.user_metadata?.full_name || 'Guest Player',
+            skill_level: parsed.user.user_metadata?.skill_level || 'Intermediate',
+            rating: 1200
+          });
+          setLoadingSession(false);
+          clearTimeout(safetyTimer);
+          return;
+        }
+      } catch (e) {}
+    }
+
     // 1. Initial session check on app load
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (!mounted) return;
-      setSession(session);
-      setUser(session?.user ?? null);
-      if (session?.user) {
+      if (session) {
+        setSession(session);
+        setUser(session.user);
         fetchProfile(session.user);
       }
       setLoadingSession(false);
@@ -82,13 +103,18 @@ export default function App() {
     // 2. Auth state listener for sign in / sign out / token refreshes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
       if (!mounted) return;
-      setSession(session);
-      setUser(session?.user ?? null);
-
-      if (session?.user) {
+      if (session) {
+        localStorage.removeItem('guest_session');
+        setSession(session);
+        setUser(session.user);
         await fetchProfile(session.user);
       } else {
-        setProfile(null);
+        const currentGuest = localStorage.getItem('guest_session');
+        if (!currentGuest) {
+          setSession(null);
+          setUser(null);
+          setProfile(null);
+        }
       }
       setLoadingSession(false);
       clearTimeout(safetyTimer);
@@ -145,6 +171,7 @@ export default function App() {
   };
 
   const handleLogout = async () => {
+    localStorage.removeItem('guest_session');
     try {
       await supabase.auth.signOut();
     } catch (err) {

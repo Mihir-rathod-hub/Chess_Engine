@@ -11,6 +11,16 @@ const WS_BASE_URL = API_BASE_URL.replace(/^http/, 'ws') + '/ws';
  * Refreshes session if token is missing, expired, or near expiry (< 60s).
  */
 export async function getValidSessionToken() {
+  const guestSessionStr = localStorage.getItem('guest_session');
+  if (guestSessionStr) {
+    try {
+      const parsed = JSON.parse(guestSessionStr);
+      if (parsed?.session?.access_token) {
+        return parsed.session.access_token;
+      }
+    } catch (e) {}
+  }
+
   let { data: { session }, error } = await supabase.auth.getSession();
   if (error) {
     throw new Error('Authentication session error: ' + error.message);

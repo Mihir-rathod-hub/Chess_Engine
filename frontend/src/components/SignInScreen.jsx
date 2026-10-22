@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, Eye, EyeOff } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import SeamlessVideoBackground from './SeamlessVideoBackground';
 
 function GoogleIcon() {
@@ -66,8 +66,47 @@ export default function SignInScreen({ onBack, onGoToSignUp, onForgotPassword, o
     }
   };
 
+  const handleGuestSignIn = () => {
+    const guestUser = {
+      id: `guest_${Date.now()}`,
+      email: 'guest@strategic-chess.local',
+      user_metadata: {
+        full_name: 'Guest Player',
+        skill_level: 'Intermediate',
+        rating: 1200
+      }
+    };
+    const guestSession = {
+      access_token: `guest_token_${Date.now()}`,
+      user: guestUser,
+      expires_at: Math.floor(Date.now() / 1000) + 86400 * 7
+    };
+    const guestProfile = {
+      id: guestUser.id,
+      full_name: 'Guest Player',
+      skill_level: 'Intermediate',
+      rating: 1200
+    };
+
+    localStorage.setItem('guest_session', JSON.stringify({
+      user: guestUser,
+      session: guestSession,
+      profile: guestProfile
+    }));
+
+    if (onSignInSuccess) {
+      onSignInSuccess({ user: guestUser, session: guestSession });
+    }
+  };
+
   const handleGoogleClick = async () => {
     setErrorMessage('');
+    if (!isSupabaseConfigured) {
+      setErrorMessage(
+        'Google Sign-In is unavailable because Supabase is not configured yet in frontend/.env. Set your real VITE_SUPABASE_URL & VITE_SUPABASE_ANON_KEY to use Google Auth, or click "Continue as Guest" below to play immediately.'
+      );
+      return;
+    }
     try {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
@@ -273,6 +312,35 @@ export default function SignInScreen({ onBack, onGoToSignUp, onForgotPassword, o
                 >
                   <GoogleIcon />
                   <span>Continue with Google</span>
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.015 }}
+                  whileTap={{ scale: 0.985 }}
+                  type="button"
+                  onClick={handleGuestSignIn}
+                  style={{
+                    width: '100%',
+                    padding: '0.75rem',
+                    marginTop: '0.65rem',
+                    borderRadius: '10px',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    background: 'linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%)',
+                    color: '#E4E4E7',
+                    fontWeight: 600,
+                    fontSize: '0.85rem',
+                    letterSpacing: '0.5px',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    backdropFilter: 'blur(8px)',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  <span style={{ fontSize: '1.1rem' }}>♟️</span>
+                  <span>Continue as Guest (Instant Play)</span>
                 </motion.button>
               </div>
             </div>

@@ -8,12 +8,15 @@ const __dirname = path.dirname(__filename);
 // Load .env from backend root
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
+const rawSupabaseUrl = (process.env.SUPABASE_URL || '').trim();
+const sanitizedSupabaseUrl = rawSupabaseUrl ? rawSupabaseUrl.replace(/^(https?:\/\/)+/i, 'https://').replace(/\/+$/, '') : '';
+
 export const env = {
   PORT: process.env.PORT ? parseInt(process.env.PORT, 10) : 3001,
   HOST: process.env.HOST || '127.0.0.1',
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:5173',
-  SUPABASE_URL: process.env.SUPABASE_URL || '',
-  SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+  SUPABASE_URL: sanitizedSupabaseUrl,
+  SUPABASE_SERVICE_ROLE_KEY: (process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim()
 };
 
 export const isServiceRoleKey = Boolean(

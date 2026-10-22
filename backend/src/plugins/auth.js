@@ -31,6 +31,24 @@ export async function authenticate(request, reply) {
       );
     }
 
+    // Support guest mode or unconfigured Supabase backend
+    if (!supabaseAdmin || token.startsWith('guest_')) {
+      const guestId = token.startsWith('guest_') ? token : `guest_${Date.now()}`;
+      request.user = {
+        id: guestId,
+        email: 'guest@strategic-chess.local',
+        user_metadata: { full_name: 'Guest Player' }
+      };
+      request.profile = {
+        id: guestId,
+        full_name: 'Guest Player',
+        skill_level: 'Intermediate',
+        rating: 1200,
+        created_at: new Date().toISOString()
+      };
+      return;
+    }
+
     // Verify token with trusted Supabase auth service
     const { data: { user }, error: authError } = await supabaseAdmin.auth.getUser(token);
 

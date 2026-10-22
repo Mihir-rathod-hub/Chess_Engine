@@ -1,0 +1,13 @@
+{
+  "name": "chess-engine-master",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Strategic Chess Engine & Web Platform",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run dev --prefix frontend"
+  }
+}

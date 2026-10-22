@@ -1,2 +1,32 @@
+# Python
 __pycache__/
 *.py[cod]
+.venv/
+venv/
+*.sqlite3
+
+# Environment and secret files
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+frontend/.env
+backend/.env
+
+# Node & Build artifacts
+node_modules/
+**/node_modules/
+frontend/node_modules/
+backend/node_modules/
+dist/
+**/dist/
+frontend/dist/
+dist-ssr/
+*.log
+.DS_Store
+
+# IDE & OS
+.vscode/
+.idea/
+Thumbs.db

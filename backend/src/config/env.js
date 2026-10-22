@@ -13,7 +13,7 @@ const sanitizedSupabaseUrl = rawSupabaseUrl ? rawSupabaseUrl.replace(/^(https?:\
 
 export const env = {
   PORT: process.env.PORT ? parseInt(process.env.PORT, 10) : 3001,
-  HOST: process.env.HOST || '127.0.0.1',
+  HOST: process.env.HOST || '0.0.0.0',
   FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:5173',
   SUPABASE_URL: sanitizedSupabaseUrl,
   SUPABASE_SERVICE_ROLE_KEY: (process.env.SUPABASE_SERVICE_ROLE_KEY || '').trim()
